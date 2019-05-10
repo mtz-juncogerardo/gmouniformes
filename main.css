@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+:root{
+  --blueColor: #002C54;
+  --darkBlue: #16253D;
+  --whiteColor: #F0EFEA;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav{
+  width: 100vw;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+}
+
+.nav-link{
+  margin-right: 10px !important;
+}
+
+.hero{
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--blueColor);
+  padding-top: 100px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.hero-flex{
+  display: flex;
+  position: relative;
+}
+
+.hero-img{
+  position: absolute;
+  right: 0;
+}
+
+.hero-img img{
+  border-radius: 0% 50% 0% 50%;
+  height: 80vh;
+}
+
+.hero-text{
+  color: white;
+  width: 40em;
+  margin-top: 50px;
+}
+
+.hero-text h5{
+  font-weight: bold;
+}
+
+.hero-text h2{
+  margin-left: 40px;
+  border-left: 3px solid white;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.atributos{
+  height: 40vh;
+  width: 50vw;
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  grid-gap: 30px;
+  grid-row-gap: 80px;
+  color: var(--whiteColor);
+  padding-top: 80px;
+  margin-top: 30px;
+}
+
+.atr-item{
+  position: relative;
+}
+
+.atr-item i{
+  position: absolute;
+  font-size: 70px;
+  top: -20px;
+  z-index: 0;
+  color: #aaaa;
+}
+
+.atr-item p{
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+.conocer-text{
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.conocer-text:hover{
+  text-decoration: none;
+}
