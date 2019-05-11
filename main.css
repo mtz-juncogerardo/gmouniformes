@@ -20,8 +20,9 @@ nav{
   padding-left: 100px !important;
   padding-right: 100px !important;
   font-family: 'Open Sans', sans-serif;
-  position: absolute !important;
+  position: fixed !important;
   z-index: 2 !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .nav-link{
@@ -320,4 +321,274 @@ nav{
 
 .contact-tags{
   margin-bottom: 20px;
+}
+
+
+/* --------------Responsive Design------------------- */
+
+@media screen and (max-height:500px){
+
+  body{
+    background-color: var(--whiteColor);
+  }
+
+  .info-box{
+      margin-top: 5%;
+  }
+
+  .atributos{
+    background-color: white;
+  }
+
+  #nosotros{
+    background-color: white;
+    margin-bottom: 15%;
+  }
+
+  .sociocard{
+    font-size: 12px;
+  }
+
+  #socios{
+    margin-bottom: 5%;
+  }
+
+}
+
+@media screen and (max-height:400px){
+
+  .hero{
+    padding-top: 10px;
+  }
+
+  #nosotros{
+    height: 230vh;
+  }
+
+  #socios{
+    margin-bottom: 10%;
+  }
+
+  .sociocard{
+    padding-top: 30px;
+  }
+
+}
+
+@media screen and (max-height:320px){
+  #nosotros{
+    height: 260vh;
+  }
+
+  .ustxt-container{
+    height: 28%;
+  }
+
+  #socios{
+    margin-bottom: 15%;
+  }
+}
+
+@media screen and (max-width:1042px){
+  .hero-text{
+    font-size: 0.7em;
+  }
+
+  .nosotros-text{
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width:860px){
+  .hero-text{
+    font-size: 0.6em;
+  }
+
+  .hero-text h5{
+    font-size: 1.8em;
+  }
+
+  .nosotros-text{
+    font-size: 0.7em;
+  }
+
+  .cardInfo{
+    font-size: 0.8em;
+  }
+
+  .atributos{
+    font-size: 0.8em;
+  }
+
+  .sociocard{
+    font-size: 0.7em;
+    padding-top: 30px;
+  }
+
+  .calltocontact{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .calltotext h2:nth-child(1){
+    font-size: 16px;
+  }
+
+  .calltotext h2:nth-child(2){
+    font-size: 16px;
+  }
+
+  .calltobtns a{
+    font-size: 12px;
+  }
+
+  .barra-contacto{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 776px){
+
+  #nosotros{
+    height: 275vh;
+  }
+
+  .ustxt-container{
+    height: 23%;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  .atributos{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #socios{
+    height: 160vh;
+  }
+
+  .partners img{
+    height: 35px;
+    margin-top: 20px;
+  }
+
+  .partnercards{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sociocard{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 20px;
+  }
+
+  .calltocontact{
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .calltotext{
+    margin-bottom: 30px;
+  }
+
+  #contact{
+    height: 80vh;
+  }
+
+  .barra-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .contact-text{
+    margin-bottom: 30px;
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+
+  .hero-text h2,
+  .hero-text h5{
+    width: 80%;
+  }
+
+  #nosotros{
+    height: 300vh;
+  }
+
+  .partners{
+    padding-top: 0;
+  }
+
+  .nosotros-text p{
+    width: 90%;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 430px){
+
+  .hero-text h2{
+    font-size: 2.1em;
+  }
+
+  .hero-text h5{
+    font-size: 1.5em
+  }
+
+  #nosotros{
+    height: 270vh;
+  }
+
+  .nosotros-text p{
+    width: 100%;
+    line-height: 15px;
+    font-size: 10px;
+  }
+
+  .info-box{
+    padding: 0;
+    bottom: 19vh;
+  }
+
+  .atributos{
+    margin-top: 30px;
+    font-size: 10px;
+  }
+
+  .atributos i{
+    padding-right: 40%;
+  }
+
+  .partners{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
+  .sociocard{
+    font-size: 0.6em;
+    padding: 0 20px;
+  }
+
+  #contacto{
+    margin-top: 120px;
+  }
+
+  .calltotext h2:nth-child(1),
+  .calltotext h2:nth-child(2){
+    font-size: 14px;  
+  }
+
 }
