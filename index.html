@@ -176,7 +176,7 @@
         <p><strong>Correo:</strong> gekus@hotmail.com</p>
       </div>
       <div class="contact-tags">
-        <a href="https://web.whatsapp.com/send?phone=524274884153&text=Hola%20Buenas%20Tardes,%20Me%20interesa%20saber%20mas%20acerca%20de%20los%20uniformes%20empresariales." target="_blank">Escribenos un Whatsapp</a>
+        <a id="whatsapp" href="https://web.whatsapp.com/send?phone=524274884153&text=Hola%20Buenas%20Tardes,%20Me%20interesa%20saber%20mas%20acerca%20de%20los%20uniformes%20empresariales." target="_blank">Escribenos un Whatsapp</a>
         <a href="mailto:gekus@hotmail.com">Mandanos un Correo</a>
       </div>
     </div>
@@ -188,5 +188,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+
+<script>
+
+  const whatsappLink = document.getElementById('whatsapp');
+
+  let width = screen.width;
+  let link = "https://wa.me/524274882153?text=Hola%20Buenas%20Tardes,%20Me%20interesa%20saber%20mas%20acerca%20de%20los%20uniformes%20empresariales."
+
+  if (width < 769) {
+    whatsappLink.setAttribute("href", link);
+  }
+
+</script>
 
 </html>
