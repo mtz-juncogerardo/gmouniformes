@@ -106,121 +106,74 @@ nav{
 #nosotros{
   height: 180vh;
   width: 100vw;
-}
-
-.ustxt-container{
-  width: 100%;
-  height: 35%;
-  background-image: -webkit-linear-gradient(-85deg, var(--whiteColor) 70%, white 50%);
+  background-image: url('Images/infoWallpaper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .nosotros-text{
+  width: 60%;
+  padding-top: 5em;
+  margin-left: 20em;
   text-align: center;
-  padding: 20px;
-  padding-top: 60px;
-  letter-spacing: 2px;
-  color: var(--darkBlue);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 .nosotros-text h5{
-  font-size: 1.2em;
-  margin: 20px 0px;
+  font-size: 2em;
   color: var(--blueColor);
 }
 
 .nosotros-text p{
-  font-weight: bold;
-  width: 80vw;
-  font-size: 1.3em;
+  color: #333333;
 }
 
 .info-box{
-  background-color: white;
-  box-shadow: -6px -6px 6px 3px var(--whiteColor);
-  width: 65vw;
-  margin-left: 17vw;
-  position: relative;
-  bottom: 25vh;
-  height: fit-content;
-  padding: 50px;
-  border-radius: 10px;
+  margin-top: 8em;
+  padding-left: 20em;
 }
 
 .cardInfo{
-  height: 260px;
-  color: var(--blueColor);
-}
-
-.cardInfo1{
-  border-right: 0.5px solid var(--whiteColor);
-  border-bottom: 0.5px solid var(--whiteColor);
-}
-
-.cardInfo2{
-  border-left: 0.5px solid var(--whiteColor);
-  border-bottom: 0.5px solid var(--whiteColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .cardInfo3{
-  border-right: 0.5px solid var(--whiteColor);
-  border-top: 0.5px solid var(--whiteColor);
+  padding-top: 230px;
+  padding-left: 20em;
 }
 
-.cardInfo4{
-  border-left: 0.5px solid var(--whiteColor);
-  border-top: 0.5px solid var(--whiteColor);
+.cardInfo-text{
+  background-color: white;
+  position: absolute;
+  -webkit-box-shadow: -1px 12px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 12px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: -1px 12px 15px 0px rgba(0,0,0,0.75);
+  bottom: -350px;
+  border-radius: 10px;
+  width: 240px;
+  height: 220px;
+  padding: 10px;
+  margin-bottom: 200px;
+}
+
+.cardInfo-text h1{
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cardInfo-text p{
+  color: gray;
 }
 
 .cardInfo img{
-  height: 25%;
-  margin-top: 25px;
+  height: 200px;
+  border-radius: 10px;
 }
 
-.cardInfo h1{
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-top: 20px;
-}
 
-.cardInfo p{
-  font-size: 0.9em;
-}
-
-/* ------------Atributos-------------- */
-
-.atributos{
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 200px;
-  padding-top: 20px;
-  box-shadow: 2px 2px 12px lightgray;
-  position: relative;
-  bottom: 25vh;
-}
-
-.atr-item{
-  text-align: center;
-  font-size: 1.2em;
-  color: var(--blueColor);
-}
-
-.atr-item i{
-  color: #B7D6FD;
-  padding-right: 50%;
-  font-size: 2em;
-}
-
-.atr-item p{
-  width: 50%;
-  line-height: 20px;
-  word-spacing: 2px;
-
-}
 
 /* -------socios--------- */
 
@@ -326,6 +279,50 @@ nav{
 
 /* --------------Responsive Design------------------- */
 
+@media screen and (max-width: 991px){
+
+  #nosotros{
+    background-image: url('Images/responsiveInfo.jpg');
+    height: 230vh;
+  }
+
+  #socios{
+    height: 130vh;
+  }
+
+  .nosotros-text{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .nosotros-text h5{
+    color: lightgray;
+  }
+
+  .nosotros-text p{
+    color: white;
+  }
+
+  .info-box{
+    padding-left: 0;
+  }
+
+  .cardInfo3{
+    padding-left: 0;
+  }
+
+  .sociocard{
+    padding: 0;
+    padding-top: 30px;
+  }
+}
+
+
 @media screen and (max-height:500px){
 
   body{
@@ -409,20 +406,17 @@ nav{
   }
 
   .nosotros-text{
-    font-size: 0.7em;
+    font-size: 1em;
   }
 
   .cardInfo{
-    font-size: 0.8em;
-  }
-
-  .atributos{
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   .sociocard{
-    font-size: 0.7em;
-    padding-top: 30px;
+    font-size: 0.8em;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .calltocontact{
@@ -448,14 +442,18 @@ nav{
   }
 }
 
-@media screen and (max-width: 776px){
+@media screen and (max-width: 767px){
 
   #nosotros{
-    height: 275vh;
+    height: 340vh;
   }
 
   .ustxt-container{
     height: 23%;
+  }
+
+  .cardInfo2{
+    padding-top: 230px;
   }
 
 }
@@ -516,7 +514,7 @@ nav{
 
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 525px){
 
   .hero-text h2,
   .hero-text h5{
@@ -524,16 +522,31 @@ nav{
   }
 
   #nosotros{
-    height: 300vh;
+    height: 320vh;
+  }
+
+  .info-box{
+    margin-top: 5em;
   }
 
   .partners{
     padding-top: 0;
   }
 
+  .nosotros-text{
+    padding: 0;
+    padding-top: 5em;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .nosotros-text h5{
+    font-size: 1.5em;
+  }
+
   .nosotros-text p{
-    width: 90%;
-    font-size: 1.1em;
+    width: 100%;
+    font-size: 1em;
   }
 }
 
@@ -549,30 +562,6 @@ nav{
 
   .hero-text h5{
     font-size: 1.6em
-  }
-
-  #nosotros{
-    height: 220vh;
-  }
-
-  .nosotros-text p{
-    width: 100%;
-    line-height: 15px;
-    font-size: 10px;
-  }
-
-  .info-box{
-    padding: 0;
-    bottom: 19vh;
-  }
-
-  .atributos{
-    margin-top: 30px;
-    font-size: 10px;
-  }
-
-  .atributos i{
-    padding-right: 40%;
   }
 
   .partners{
