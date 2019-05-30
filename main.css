@@ -109,6 +109,7 @@ nav{
   background-image: url('Images/infoWallpaper.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .nosotros-text{
@@ -116,6 +117,13 @@ nav{
   padding-top: 5em;
   margin-left: 20em;
   text-align: center;
+}
+
+.logo-img{
+  position: absolute;
+  height: 150px;
+  top: 5vw;
+  left: 6vw;
 }
 
 .nosotros-text h5{
@@ -284,6 +292,12 @@ nav{
   #nosotros{
     background-image: url('Images/responsiveInfo.jpg');
     height: 230vh;
+  }
+
+  .logo-img{
+    top: 0;
+    left: 0;
+    height: 100px;
   }
 
   #socios{
@@ -535,7 +549,7 @@ nav{
 
   .nosotros-text{
     padding: 0;
-    padding-top: 5em;
+    padding-top: 120px;
     padding-left: 10px;
     padding-right: 10px;
   }
